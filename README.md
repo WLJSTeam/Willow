@@ -29,6 +29,13 @@ Page selections accept `All`, a page number, a `Span`, or a list of page numbers
 
 `ImagesToPDF` uses direct `MImage` access. Every image becomes a full-bleed page whose physical dimensions are derived from its pixel dimensions and `ImageResolution`. RGB, grayscale, bit, byte, real, and alpha-channel input images are normalized to interleaved 8-bit RGB before entering the native writer.
 
+## Pre-built binaries
+
+- [x] MacOS ARM64 LLink v8
+- [ ] MacOS x86 LLink v8 
+- [ ] GNU/Linux x86 LLink v8
+- [ ] Windows x86 LLink v8  
+
 ## Build (if needed)
 
 Requirements are a local Wolfram installation and the normal C compiler for the platform:
