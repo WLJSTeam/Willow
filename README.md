@@ -34,7 +34,7 @@ Page selections accept `All`, a page number, a `Span`, or a list of page numbers
 - [x] MacOS ARM64 LLink v8
 - [ ] MacOS x86 LLink v8 
 - [ ] GNU/Linux x86 LLink v8
-- [ ] Windows x86 LLink v8  
+- [x] Windows x86 LLink v8  
 
 ## Build (if needed)
 
