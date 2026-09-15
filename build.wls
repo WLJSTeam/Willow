@@ -22,6 +22,7 @@ library = CreateLibrary[
   "TargetDirectory" -> target,
   "IncludeDirectories" -> {pdfioRoot, zlibRoot},
   "CompileOptions" -> If[$OperatingSystem === "Windows", {"/O2"}, {"-O3", "-fvisibility=hidden"}],
+  "Libraries" -> If[$OperatingSystem === "Windows", {"Advapi32.lib"}, {}],
   "ShellOutputFunction" -> Print
 ];
 

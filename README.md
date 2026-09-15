@@ -44,6 +44,9 @@ Requirements are a local Wolfram installation and the normal C compiler for the 
 - Linux: GCC or Clang development tools
 - Windows: a Visual Studio C/C++ toolchain supported by Wolfram's `CCompilerDriver`` package
 
+On Windows the build links `Advapi32.lib`, which supplies PDFio's
+`CryptAcquireContextA`, `CryptGenRandom`, and `CryptReleaseContext` calls.
+
 From the repository root:
 
 ```sh
