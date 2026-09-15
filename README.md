@@ -4,6 +4,16 @@ Willow is a small Wolfram Language source package for PDF operations that are aw
 
 The native core uses [PDFio](https://github.com/michaelrsweet/pdfio) 1.6.4 and zlib 1.3.1. Both are vendored and compiled into one platform library, so the resulting binary has no non-system runtime dependency.
 
+## Supported Platforms
+*Requires WL > 14.3*
+
+- [x] MacOS ARM64 LLink v8
+- [ ] MacOS x86 LLink v8 
+- [x] GNU/Linux x86 LLink v8
+- [ ] GNU/Linux ARM64 LLink v8
+- [x] Windows x86 LLink v8  
+
+
 ## Current API
 
 ```wl
@@ -29,12 +39,6 @@ Page selections accept `All`, a page number, a `Span`, or a list of page numbers
 
 `ImagesToPDF` uses direct `MImage` access. Every image becomes a full-bleed page whose physical dimensions are derived from its pixel dimensions and `ImageResolution`. RGB, grayscale, bit, byte, real, and alpha-channel input images are normalized to interleaved 8-bit RGB before entering the native writer.
 
-## Pre-built binaries
-
-- [x] MacOS ARM64 LLink v8
-- [ ] MacOS x86 LLink v8 
-- [ ] GNU/Linux x86 LLink v8
-- [x] Windows x86 LLink v8  
 
 ## Build (if needed)
 
